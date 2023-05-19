@@ -10,35 +10,49 @@
 	<!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<!--favicon-->
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Krub:wght@400;700&family=Open+Sans:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!--favicon-->
 	<link rel="icon" type="image/x-icon" href="faviconAcero.jpg"/>
 	<!--pagina de iconos-->
 	<script src="https://kit.fontawesome.com/bf2b37992f.js" crossorigin="anonymous"></script>
     <!--documento css-->
     <link rel="preload" href="css\estiloMuni.css" as="style"/>
     <link rel="stylesheet" type="text/css" href="css\estiloMuni.css"/>
-
+    <!--documento css-->
+    <script defer src="index.js"></script>
 </head>
 <body>
 
+    <!--barra nav-->
     <header>
-        <h1>Sierra Grande</h1>
-        <!--
-        <img src="img\Escudo_PlayasDoradas.png" alt="Logo_SierraGrande" />
-        <img src="img\Logo_SierraGrande_FuturoenMarcha.pdf" alt="Logo_SierraGrande" />
--->
-    </header>
-    
-    <div class="nav">
-        <nav class="navegacion contenedor">
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Clientes</a>
-            <a href="#">Contactos</a>
+        <a href="#"><img src="img\Escudo_municipal_transparente.png" class="logo-pequeño" alt="Logo_SierraGrande"/></a>
+        <nav class="nav-superior"></nav>
+        <button class="barra"><i class="fa-solid fa-bars"></i></button>
+            <ul>
+                <li><a href="#">Sierra Grande</a></li>
+                <li><a href="#">Autoridades</a></li>
+                <li><a href="#">Turismo</a></li>
+                <li><a href="#">Boletin Oficial</a></li>
+                <li><a href="#">Oficina Virtual</a></li>
+            </ul>
         </nav>
+    </header>
+
+    <!--slider-->
+    <div class="contenedor-slider">
+        <ul class="slider">
+            <li id="slide1"><h2>Naturaleza</h2><img src="img\prueba1.jpg"></li>
+            <li id="slide2"><h2>Inmensidad</h2><img src="img\prueba2.jpg"></li>
+            <li id="slide3"><h2>Desarrollo</h2><img src="img\prueba3.jpg"></li>
+            <li id="slide4"><h2>Naturaleza</h2><img src="img\prueba4.jpg"></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#slide1">1</a></li>
+            <li><a href="#slide2">2</a></li>
+            <li><a href="#slide3">3</a></li>
+            <li><a href="#slide4">4</a></li>
+        </ul>
     </div>
 
-    
 </body>
 </html>
