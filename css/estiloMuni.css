@@ -157,6 +157,7 @@ ul.slider li {
 
 ul.slider li h2 {
   font-family: 'Permanent Marker', cursive;
+  font-weight: 300;
   position: absolute;
   font-size: 60px;
   left: 50%;
@@ -180,7 +181,7 @@ ul.slider li:target {
 
 .menu {
   text-align: center;
-  margin: 20px;
+  margin: 20px 0;
   width: 100%;
   position: absolute;
   left: 50%;
@@ -298,6 +299,7 @@ ul.slider li:target {
   grid-template-columns: auto auto;
   width: 100%;
   height: auto;
+  margin-bottom: 40px;
 }
 
 .noti {
@@ -305,13 +307,15 @@ ul.slider li:target {
   text-align: center;
   height: auto;
   margin: 20px;
-  padding: 20px 10px;
+  padding: 20px;
   border-radius: 2%;
   position: relative;
 }
 
 .noti img {
-  max-width: 300px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 .noti a {
@@ -319,7 +323,20 @@ ul.slider li:target {
   color: black;
 }
 
-.sombra {
+.noti h6 {
+  text-align: right;
+  font-size: medium;
+  color: var(--verde);
+}
+
+.noti p {
+  line-height: 2;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: justify;
+}
+
+.relleno {
   position: absolute;
   background-color: rgba(0, 161, 154, 0);
   width: 100%;
@@ -328,8 +345,14 @@ ul.slider li:target {
   right: 0;
 }
 
-.sombra:hover {
+.relleno:hover {
   background-color: rgba(0, 161, 154, 0.2);
+}
+
+.sombra {
+  -webkit-box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.76);
+  -moz-box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.76);
+  box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.76);
 }
 
 @media (max-width: 748px) {
@@ -342,4 +365,18 @@ ul.slider li:target {
   .noticias {
     grid-template-columns: auto auto auto auto;
   }
+}
+
+footer {
+  display: grid;
+  background-color: var(--marron);
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  margin: auto;
+  height: 200px;
+  border: 2px solid var(--oscuro);
+}
+
+.pie {
+  display: inline-flex
 }
