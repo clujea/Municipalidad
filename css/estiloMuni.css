@@ -124,7 +124,7 @@ header ul li a:hover {
   }
 }
 
-/* slider automatico*/
+/* slider de imagenes*/
 .contenedor-slider {
   margin: 0 auto 100px auto;
   width: 100%;
@@ -367,16 +367,154 @@ ul.slider li:target {
   }
 }
 
+/* pie de pagina*/
 footer {
   display: grid;
-  background-color: var(--marron);
-  grid-template-columns: auto auto auto;
+  background-color: var(--oscuro);
+  grid-template-columns: auto 35%;
+  grid-template-rows: 4fr 3fr 1fr;
   width: 100%;
   margin: auto;
-  height: 200px;
-  border: 2px solid var(--oscuro);
+  height: 400px;
+}
+
+.telefonos {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.telefonos a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.telefonos h3 {
+  font-size: 26px;
+}
+
+.telefonos a i {
+  font-size: 26px;
+  margin: 5px 0;
+}
+
+.margen-top {
+  margin-top: 20px;
 }
 
 .pie {
-  display: inline-flex
+  display: flex;
+  justify-content: space-around;
+}
+
+.escudo {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.escudo-muni {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.escudo div {
+  color: white;
+}
+
+.escudo div h4 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.escudo div h3 {
+  font-size: 26px;
+}
+
+.direccion {
+  color: white;
+  text-align: center;
+}
+
+.direccion i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.redes {
+  display: inline-block;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.redes a {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 5px;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  font-size: 26px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.redes a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.creditos {
+  grid-column: 1/3;
+  text-align: center;
+  color: var(--marron);
+}
+
+@media (max-width: 900px) {
+  .telefonos h3 {
+    font-size: 16px;
+  }
+  
+  .telefonos a i {
+    font-size: 16px;
+  }
+    
+  .escudo-muni {
+    max-width: 60px;
+    max-height: 60px;
+    margin-left: 8px;
+  }
+  
+  .escudo div h4 {
+    font-size: 10px;
+  }
+  
+  .escudo div h3 {
+    font-size: 14px;
+  }
+    
+  .direccion i {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .direccion h4 {
+    font-size: 12px;
+  }
+   
+  .redes a {
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    margin: 10px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+    
 }
