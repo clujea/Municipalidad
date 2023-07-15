@@ -305,35 +305,21 @@ ul.slider li:target {
 .noti {
   border: 2px solid var(--verde);
   text-align: center;
-  height: auto;
+  height: 600px;
   margin: 20px;
   padding: 20px;
   border-radius: 2%;
   position: relative;
 }
 
-.noti img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+.noti iframe {
+  max-width: 500px;
+  height: 100%;
 }
 
 .noti a {
-  text-decoration: none;
-  color: black;
-}
-
-.noti h6 {
-  text-align: right;
-  font-size: medium;
-  color: var(--verde);
-}
-
-.noti p {
-  line-height: 2;
-  font-size: 20px;
-  font-weight: 700;
-  text-align: justify;
+  width: 100%;
+  height: 100%;
 }
 
 .relleno {
@@ -471,8 +457,10 @@ footer {
 }
 
 .creditos {
+  display: flex;
   grid-column: 1/3;
-  text-align: center;
+  justify-content: center;
+  align-items: end;
   color: var(--marron);
 }
 
@@ -517,4 +505,41 @@ footer {
     font-size: 16px;
   }
     
+}
+
+/* html sierra grande*/
+
+.sierragrande {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows:auto auto auto;
+  position: relative;
+}
+
+.sg {
+  width: auto;
+  height: 1000px;
+  margin: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.foto {
+  
+}
+
+.foto img {
+  max-width: 500px;
+  height: 100%;
+}
+
+.sierra {
+  
+}
+
+.sg {
+  height: 200px;
 }
