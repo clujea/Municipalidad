@@ -157,9 +157,11 @@ ul.slider li {
 
 ul.slider li h2 {
   font-family: 'Permanent Marker', cursive;
-  font-weight: 300;
+  color: black;
+  -webkit-text-stroke: white 1px;
+  font-weight: 200;
   position: absolute;
-  font-size: 60px;
+  font-size: 80px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -515,16 +517,26 @@ footer {
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows:auto auto auto;
   position: relative;
 }
 
 .sg {
   width: auto;
-  height: 1000px;
-  margin: 20px;
+  height: 1200px;
+  margin-top: 100px;
+  margin-bottom: 60px;
   padding: 20px;
   position: relative;
+}
+
+.sierragrande h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.sierragrande p {
+  font-weight: 200;
+  font-size: 20px;
 }
 
 .foto {
@@ -532,8 +544,9 @@ footer {
 }
 
 .foto img {
-  max-width: 500px;
-  height: 100%;
+ display: flexbox;
+ max-width: 230px;
+ max-height: 1200px;
 }
 
 .sierra {
@@ -542,4 +555,29 @@ footer {
 
 .sg {
   height: 200px;
+}
+
+/* html gobierno*/
+
+.gabinete {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.gab {
+  margin: 40px 0;
+}
+
+.gabinete h2 {
+  padding: 10px;
+}
+
+.gabinete h3 {
+  padding: 10px;
+  text-indent: 20px;
+}
+
+.gabinete h4 {
+  text-indent: 50px;
+  padding: 10px;
 }
