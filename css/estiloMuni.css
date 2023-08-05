@@ -564,12 +564,36 @@ footer {
   margin-bottom: 50px;
 }
 
-.gab {
+.gabfoto {
   margin: 40px 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: inline;
+	justify-content: space-evenly;
+  padding: 10px 20px;
+}
+
+.gabfoto img{
+  max-width: 120px;
+  margin-left: 150px;
+}
+
+.gab{
+  margin: 40px 0;
+}
+
+.gabinete h1 {
+  padding: 10px;
+  text-align: center;
+  font-size: 50px;
 }
 
 .gabinete h2 {
   padding: 10px;
+  text-align: left;
+  text-indent: 50px;
+  font-size: 40px;
 }
 
 .gabinete h3 {
